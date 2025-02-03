@@ -1,8 +1,10 @@
 
 const AppPages = [
-  { href: '/', title: 'Home' },
-  { href: '/blog', title: 'Blog' },
-  { href: '/projects', title: 'Projects' },
-  { href: '/about', title: 'About' },
-  {href: '/quotes', title:"quotes" },
+  { path: '/', title: 'Home' },
+  { path: '/blog', title: 'Blog' },
+  { path: '/projects', title: 'Projects' },
+  { path: '/about', title: 'About' },
+  {path: '/quotes', title:"quotes" },
 ]
+
+export default AppPages;
