@@ -1,10 +1,13 @@
-import React from 'react'
-import Navbar from './components/navbar'
+import React from "react";
+import Navbar from "./components/navbar";
+import sectioncontainer from "./components/sectionContainer";
 
 const App = () => {
   return (
-    <Navbar/>
-  )
-}
+    <sectioncontainer>
+      <Navbar />
+    </sectioncontainer>
+  );
+};
 
-export default App
+export default App;
