@@ -3,13 +3,13 @@ import AppPages from "../data/app_pages";
 
 const Navbar = () => {
   return (
-   <div className=" flex justify-between w-full max-w-3xl mx-auto py-4">
-   <div className="p-la">Boluwatife David Adanla</div>
+   <div className=" flex justify-between  max-w-2xl xl:max-w-5xl mx-auto py-4">
+   <div className="text-[20px] font-serif font-semibold">Boluwatife David Adanla</div>
 
    {/* This houses all the clickable links in my app */}
-   <div className="">
+   <div className="font-serif ">
      {AppPages.map((link, index) => (
-       <a key={index} href={link.path} className="p-2 text-blue-500 hover:underline">
+       <a key={index} href={link.path} className="p-2 text-black font-medium">
          {link.title}
        </a>
      ))}

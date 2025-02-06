@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 
-@theme {
-   --font-display: "Satoshi", "sans-serif";
-   --spacing-large: 20px;
-  
-   /* ... */
- }
+@theme{
+   --font-*: initial;
+   --font-secondary: "Space Grotesk", serif;
+}
