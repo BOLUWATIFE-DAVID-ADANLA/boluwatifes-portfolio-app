@@ -7,13 +7,14 @@ const Navbar = () => {
    <div className="text-[20px] font-serif font-semibold">Boluwatife David Adanla</div>
 
    {/* This houses all the clickable links in my app */}
-   <div className="font-serif ">
+   <div className="font-serif space-x-6 ">
      {AppPages.map((link, index) => (
-       <a key={index} href={link.path} className="p-2 text-black font-medium">
+       <a key={index} href={link.path} className="p-2  text-black font-medium">
          {link.title}
        </a>
      ))}
    </div>
+
  </div>
 );
 };
