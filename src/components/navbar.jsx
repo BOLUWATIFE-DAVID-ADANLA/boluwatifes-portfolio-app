@@ -7,8 +7,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <div className=" flex justify-between px-[16px] md:max-w-2xl xl:max-w-5xl mx-auto py-4">
-        <div className="   md:text-[22px] font-serif font-semibold">
+      <div className=" flex justify-between px-[16px] my-[20px] items-center md:max-w-2xl xl:max-w-5xl mx-auto py-4">
+        <div className="  text-[16px] md:text-[18px] font-serif font-semibold">
           {appText.author}
         </div>
 
