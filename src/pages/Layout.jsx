@@ -1,9 +1,15 @@
-import React from 'react'
-
-const  Layout= () => {
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/navbar";
+const Layout = () => {
   return (
-    <div>layout</div>
-  )
-}
+    <div>
+      <Navbar /> {/* Navbar is always visible */}
+      <main>
+        <Outlet /> {/* Renders the active route’s component */}
+      </main>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
