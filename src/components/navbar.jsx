@@ -15,12 +15,12 @@ const Navbar = () => {
         <HanburgerIcon onClick={() => setIsOpen(!isOpen)} />
 
         {/* this is the desktop view of the nav items  */}
-        <div className="  hidden md:flex  font-serif space-x-6 ">
+        <div className="  hidden md:flex   space-x-6 ">
           {AppPages.map((link, index) => (
             <a
               key={index}
               href={link.path}
-              className="p-2  text-black font-medium">
+              className="p-2  text-black font-serif font-medium">
               {link.title}
             </a>
           ))}
