@@ -1,12 +1,23 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import sectioncontainer from "./components/sectionContainer";
-
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Projects from "./pages/projects";
+import Home from "./pages/Home";
+import Layout from "./pages/layout";
 const App = () => {
   return (
-    <sectioncontainer>
-      <Navbar />
-    </sectioncontainer>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element ={<Layout />} />       
+      <Route path="/about" element ={<About />} />       
+      <Route path="/projects" element ={<Projects />} />       
+      <Route path="/home" element ={<Home />} />   
+      <Route path="/blog" element ={<Blog />} />       
+    
+
+    </Routes>
+    </BrowserRouter>
   );
 };
 
