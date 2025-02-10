@@ -4,4 +4,13 @@
 @theme{
    --font-*: initial;
    --font-secondary: "Space Grotesk", serif;
+   /* colors  */
+   --color-Text: #23101a;
+   --color-Background: #f7edf3;
+   --color-Primary: #69304d;
+   --color-Secondary: #ceca92;
+   --color-Accent: #7aac4d;
+
+
+
 }
