@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme{
    --font-*: initial;
@@ -11,6 +12,12 @@
    --color-Secondary: #ceca92;
    --color-Accent: #7aac4d;
 
+   /* dark theme colors  */
+   --color-DText: #efdce6;
+   --color-DBackground: #12080e;
+   --color-DPrimary: #cf96b3;
+   --color-DSecondary: #6d6931;
+   --color-DAccent: #7fb253;
 
 
 }

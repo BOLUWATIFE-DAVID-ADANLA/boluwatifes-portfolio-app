@@ -3,11 +3,13 @@ import AppPages from "../data/app_pages";
 import appText from "../data/appText";
 import HanburgerIcon from "./HanburgerIcon";
 import Closebuttonicon from "./Closebuttonicon";
+import { faMoon } from "@fortawesome/free-regular-svg-icons";
+import ThemeToggle from "./ThemeToggle";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <div className=" flex justify-between px-[16px] my-[20px] items-center md:max-w-2xl xl:max-w-5xl mx-auto py-4 sm:border-0 md:border-b-2 md:border-Primary">
+      <div className=" flex justify-between px-[16px] my-[20px] items-center md:max-w-2xl xl:max-w-5xl mx-auto py-4 sm:border-0 md:border-b-2 md:border-Primary ">
         <div className="  text-[16px] md:text-2xl font-serif font-semibold">
           {appText.author}
         </div>
@@ -15,15 +17,18 @@ const Navbar = () => {
         <HanburgerIcon onClick={() => setIsOpen(!isOpen)} />
 
         {/* this is the desktop view of the nav items  */}
-        <div className="  hidden md:flex   space-x-6 ">
-          {AppPages.map((link, index) => (
-            <a
-              key={index}
-              href={link.path}
-              className="p-2  text-Text font-serif font-medium hover:text-Secondary">
-              {link.title}
-            </a>
-          ))}
+        <div className="flex space-x-6 items-center ">
+          <div className="  hidden md:flex   space-x-6 ">
+            {AppPages.map((link, index) => (
+              <a
+                key={index}
+                href={link.path}
+                className="p-2  text-Text font-serif font-medium hover:text-Secondary">
+                {link.title}
+              </a>
+            ))}
+          </div>
+          <ThemeToggle />
         </div>
       </div>
 
