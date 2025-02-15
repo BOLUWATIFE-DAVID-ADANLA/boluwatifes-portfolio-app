@@ -8,8 +8,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <div className=" flex justify-between px-[16px] my-[20px] items-center md:max-w-2xl xl:max-w-5xl mx-auto py-4 sm:border-0 md:border-b-2 md:border-Primary dark:md:border-DPrimary ">
-        <div className="  text-[16px] text-Text dark:text-DText md:text-2xl font-serif font-semibold">
+      <div className=" flex justify-between px-[16px] my-[20px] items-center md:max-w-2xl xl:max-w-6xl mx-auto py-4 sm:border-0 md:border-b-2 md:border-Primary dark:md:border-DPrimary ">
+        <div className="  text-[16px] text-Text dark:text-DText  md:text-2xl font-serif font-semibold">
           {appText.author}
         </div>
 
@@ -17,7 +17,7 @@ const Navbar = () => {
           <HanburgerIcon onClick={() => setIsOpen(!isOpen)} />
 
           {/* this is the desktop view of the nav items  */}
-          <div className="  hidden md:flex   space-x-6 ">
+          <div className="  hidden lg:flex lg:space-x-2 xl:space-x-7  ">
             {AppPages.map((link, index) => (
               <a
                 key={index}

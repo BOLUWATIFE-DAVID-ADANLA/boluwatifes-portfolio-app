@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ClickableSocialIcons = ({ onClick, socialicon }) => {
   return (
-    <button onClick={onClick} className="text-black dark:text-white ">
+    <button onClick={onClick} className="dark:text-DText text-Text">
       <FontAwesomeIcon icon={socialicon} className="text-2xl " />
     </button>
   );

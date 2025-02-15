@@ -10,19 +10,15 @@ const appText = {
    
  
    MESSAGES: {
-     WELCOME: "Welcome to My Awesome App!",
-     LOGIN_SUCCESS: "You have successfully logged in.",
+     HomePageMessage: "Welcome To My World. Wanna Know what i do? Explore my portfolio 😁😁  ",
+     HomePagesubMessage: "I'm a passionate Flutter and Java developer who thrives on building high-quality, user-friendly apps that perform seamlessly across devices. In addition to coding, I enjoy writing technical articles, breaking down complex concepts to help developers enhance their skills and build better applications. My focus is on creating efficient, well-structured solutions while sharing insights that make development more accessible and enjoyable..",
      ERROR: "Something went wrong. Please try again.",
      NO_INTERNET: "No internet connection. Please check your network.",
    },
  
   
  
-   FOOTER: {
-     COPYRIGHT: "© 2025 My Awesome App. All rights reserved.",
-     TERMS: "Terms & Conditions",
-     PRIVACY: "Privacy Policy",
-   },
+   
  };
  
  export default appText;

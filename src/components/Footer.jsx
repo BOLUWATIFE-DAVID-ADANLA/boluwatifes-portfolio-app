@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="flex flex-col items-center justify-center py-4 text-center ">
       {/* Social Icons */}
       <div className="space-x-4 mb-2">
-        <ClickableSocialIcons onClick={""} socialicon={faGithub} />
+        <ClickableSocialIcons onClick={"hello"} socialicon={faGithub} />
         <ClickableSocialIcons onClick={""} socialicon={faMedium} />
         <ClickableSocialIcons onClick={""} socialicon={faInstagramSquare} />
         <ClickableSocialIcons onClick={""} socialicon={faXTwitter} />
@@ -29,13 +29,13 @@ const Footer = () => {
 
       {/* Author & Copyright */}
       <div className="flex items-center space-x-1 mb-2">
-        <h3>{appText.author}</h3>
-        <FontAwesomeIcon icon={faCopyright} className="text-[15px]" />
-        <h3>{currentYear}</h3>
+        <h3 className="dark:text-DText text-Text">{appText.author}</h3>
+        <FontAwesomeIcon icon={faCopyright} className="text-[15px] dark:text-DText text-Text" />
+        <h3 className="dark:text-DText text-Text">{currentYear}</h3>
       </div>
 
       {/* Extra Message */}
-      <h3 className="text-gray-600">Built with a lot of love... ❤️</h3>
+      <h3 className="dark:text-DText text-Text">Built with a lot of love... ❤️</h3>
     </div>
   );
 };

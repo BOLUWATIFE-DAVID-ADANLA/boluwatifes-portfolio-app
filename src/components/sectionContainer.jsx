@@ -1,13 +1,11 @@
 import React from "react";
 
-const sectioncontainer = ({ children }) => {
+const SectionContainer = ({ children }) => {
   return (
-    <section className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+    <div className="items-center md:max-w-2xl xl:max-w-6xl mx-auto py-4">
       {children}
-    </section>
+    </div>
   );
 };
 
-export default sectioncontainer;
-
-
+export default SectionContainer;
